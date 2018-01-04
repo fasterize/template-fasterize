@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>A Fasterize presentation</title>
+		<title>Synthetic and Real User Monitoring</title>
 
 		<meta name="description" content="A Fasterize presentation">
 		<meta name="author" content="Fasterize">
@@ -37,28 +37,67 @@
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>A Fasterize presentation</h1>
-					<h3>Fasterize template</h3>
-					<p>
-						<small>Created by Fasterize</small>
-					</p>
+					<div style="display: table; height: 1150px; overflow: hidden;">
+						<div style="display: table-cell; vertical-align: middle;">
+							<div>
+								<h1>Pres Title</h1>
+								<h3>Subtitle</h3>
+								<img src="assets/logo_fasterize_white.svg" style="width:10em" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="slides-left" data-background="#164B6F">
+					<span class="cat-title">Presentation</span>
+					<h2>I'm XX</h2>
+					<div class="border"></div>
+					<div class="content">
+						<ul style="list-style-type: none;">
+							<li>I'm XXX at Fasterize</li>
+							<li>twitter : @XXX</li>
+						</ul>
+						<ul style="list-style-type: none;">
+							<li><img src="assets/logo_fasterize_white.svg" style="width:15em"></li>
+							<li>Fasterize is an all-in-one website accelerator.</li>
+							<li>It is an automated web performance optimization service (SAAS) used by many high traffic websites. <br />
+									Fasterized websites are already SPDY and SSL enabled and take fully part of the next gen web.
+							</li>
+
+						</ul>
+					</div>
 				</section>
 
-			</div>
+				<section class="slides-left" data-background="#282828">
+					<span class="cat-title">Category</span>
+					<h2>title</h2>
+					<div class="border"></div>
+					<div class="content">
+						<div style="width:50%; float:right; padding:20px;">
+							<p>My data second half part</p>
+						</div>
+						<div style="width:50%; padding:20px;">
+							<p>My data first half part</p>
+						</div>
+					</div>
+				</section>
 
-			<div class="icon-bar">
-				<p>
-					<a class="image" href="http://www.fasterize.com" style="font-size:28px; font-family: AvenirNext-Medium,Arial,sans-serif; color: #FFF;"><img src="assets/fasterize_logo_mini_blanc.svg" class="plain"/><span class="logo_title">fasterize</span></a>
-					<a class="image" href="https://twitter.com/fasterize"><img class="plain" src="assets/tweet-me.svg" height="35"><span>twitter</span></a>
-          <a class="image" href="mailto:info@fasterize.com"><img class="plain" src="assets/email-me.svg" height="35"><span>email</span></a>
-          <a class="image" href="http://blog.fasterize.com/"><img class="plain" src="assets/blog-me.svg" height="35"><span>blog</span></a>
-        </p>
+				<section data-background="assets/background.jpg">
+					<div style="display: table; height: 1150px; overflow: hidden;">
+						<div style="display: table-cell; vertical-align: middle;">
+							<div>
+								<h1>Title</h1>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
+		</div>
 
+		<div class="icon-bar">
+			<img src="assets/logo_fasterize_white.svg"/>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -69,12 +108,16 @@
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
+    		slideNumber:true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				margin: 0.1,
+				minScale: 0.8,
+    		maxScale: 1.3,
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -86,7 +129,6 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
-
 		</script>
 
 	</body>
